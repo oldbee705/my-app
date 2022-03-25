@@ -6,7 +6,7 @@ import Button from './Button';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Button message="Playing!">
+    <Button message="Playing">
         Play Movie
     </Button>
     <Button message="Uploading!">
