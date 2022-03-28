@@ -2,16 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import Button from './Button';
+import ToolBar from './ToolBar';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Button message="Playing">
-        Play Movie
-    </Button>
-    <Button message="Uploading!">
-        Upload Image
-    </Button>
+    <ToolBar />
   </React.StrictMode>,
   document.getElementById('root')
 );

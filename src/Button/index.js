@@ -1,10 +1,6 @@
-function Button({ message, children }) {
-  function handleClick() {
-    alert(message);
-  }
-
+function Button({ onClick, children }) {
   return (
-    <button onClick={handleClick}>
+    <button onClick={onClick}>
       {children}
     </button>
   );
