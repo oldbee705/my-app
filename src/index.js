@@ -2,11 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import ToolBar from './ToolBar';
+import Gallery from './Gallery';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ToolBar />
+    <div>
+      <Gallery />
+      <hr />
+      <Gallery />
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
