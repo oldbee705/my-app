@@ -2,15 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import Gallery from './Gallery';
+import HelloForm from './HelloForm';
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <div>
-      <Gallery />
-      <hr />
-      <Gallery />
-    </div>
-  </React.StrictMode>,
+  <HelloForm />,
   document.getElementById('root')
 );
