@@ -8,6 +8,8 @@ function NumCounter() {
       <h1>{number}</h1>
       <button onClick={() => {
         setNumber(number + 5);
+        setNumber(n => n + 5);
+        setNumber(42)
         setTimeout(() => {
           alert(number);
         }, 3000);

@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import HelloForm from './HelloForm';
+import EF from './EmailForm';
 
 
 ReactDOM.render(
-  <HelloForm />,
+  <EF />,
   document.getElementById('root')
 );
