@@ -7,39 +7,37 @@ function EmailForm() {
     email: 'bhepworth@sculpture.com'
   });
 
-  function handleFirstNameChange(e) {
-    person.firstName = e.target.value;
-  }
-
-  function handleLastNameChange(e) {
-    person.lastName = e.target.value;
-  }
-
-  function handleEmailChange(e) {
-    person.email = e.target.value;
+  function handleChange(e) {
+    setPerson({
+      ...person,
+      [e.target.name]: e.target.value //中括号中的是键,即改变了的输入框的键
+    });
   }
 
   return (
     <>
       <label>
-        First name:
+        First Name:
         <input
+          name="firstName"
           value={person.firstName}
-          onChange={handleFirstNameChange}
+          onChange={handleChange}
         />
       </label>
       <label>
-        Last name:
+        Last Name:
         <input
+          name="lastName"
           value={person.lastName}
-          onChange={handleLastNameChange}
+          onChange={handleChange}
         />
       </label>
       <label>
         Email:
         <input
+          name="email"
           value={person.email}
-          onChange={handleEmailChange}
+          onChange={handleChange}
         />
       </label>
       <p>
