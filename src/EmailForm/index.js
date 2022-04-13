@@ -1,33 +1,35 @@
-import { useState } from 'react';
+import { useImmer } from 'use-immer';
+// import { useState } from 'react';
 
 function EmailForm() {
-  const [person, setPerson] = useState({
+  // const [person, setPerson] = useState({
+  const [person, updatePerson] = useImmer({
     firstName: 'Barbara',
     lastName: 'Hepworth',
     email: 'bhepworth@sculpture.com'
   });
 
   function handleChange(e) {
-    setPerson({
-      ...person,
-      [e.target.name]: e.target.value //中括号中的是键,即改变了的输入框的键
+    // person.firstName = e.target.value;
+    updatePerson(draft => {
+      draft[e.target.name] = e.target.value;
     });
   }
 
   return (
     <>
       <label>
-        First Name:
+        First name:
         <input
-          name="firstName"
+          name = 'firstName'
           value={person.firstName}
           onChange={handleChange}
         />
       </label>
       <label>
-        Last Name:
+        Last name:
         <input
-          name="lastName"
+          name = 'lastName'
           value={person.lastName}
           onChange={handleChange}
         />
@@ -35,7 +37,7 @@ function EmailForm() {
       <label>
         Email:
         <input
-          name="email"
+          name = 'email'
           value={person.email}
           onChange={handleChange}
         />
