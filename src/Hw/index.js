@@ -1,13 +1,14 @@
-function Hw() {
+function HelloWorld() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>
-          Hello World!
-        </h1>
-      </header>
-    </div>
+  <html>
+    <h1>
+      Hello World!
+    </h1>
+    <p>
+      hello!
+    </p>
+  </html>
   );
 }
 
-export default Hw;
+export default HelloWorld;

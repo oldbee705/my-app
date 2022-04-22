@@ -2,10 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import NL from './NameList';
+import Ul from './Props';
 
 
 ReactDOM.render(
-  <NL />,
+  <Ul />,
+
   document.getElementById('root')
 );
