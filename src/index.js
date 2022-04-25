@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import Ul from './Props';
+import Hour from './427';
 
 
 ReactDOM.render(
-  <Ul />,
+  <Hour />,
 
   document.getElementById('root')
 );
