@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-
+import React from 'react';
 // 篇幅关系，Clock组件内部的小组件也写在了一起
 function ClockWithInputBox({ time }) {
   return (

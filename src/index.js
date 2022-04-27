@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import Hour from './425';
+import Hn from './427';
 
 
 ReactDOM.render(
-  <Hour />,
+  <Hn />,
 
   document.getElementById('root')
 );
