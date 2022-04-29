@@ -1,0 +1,9 @@
+.Cm{
+  color: aqua;
+  cursor: not-allowed;
+}
+
+.B{
+  width:50px;
+  height:30px;
+}
