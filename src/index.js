@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import Hn from './516';
+import Hn from './jzq';
 
 
 ReactDOM.render(

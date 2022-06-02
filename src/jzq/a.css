@@ -1,0 +1,26 @@
+.space{
+  background-color: aquamarine;
+  height: 50px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.map{
+  width: 150px;
+  height: 150px;
+}
+
+.X{
+  background-color: rgb(0, 0, 0);
+  height: 50px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.O{
+  background-color:rgb(255, 255, 255);
+  height: 50px;
+  border-style: solid;
+  border-width: 1px;
+}
+@import '~antd/dist/antd.css';
